@@ -1,0 +1,126 @@
+$red: #f00;
+$green: #0f0;
+$white: #fff;
+$yellow: #ff0;
+$blue: #00f;
+
+@mixin animate {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@mixin whiteAnimate {
+  @include animate;
+  box-shadow: 0 0 35px 20px $white;
+  background-color: $white;
+}
+
+body {
+  height: 100vh;
+  background-color: #3c8899;
+  font-family: sans-serif;
+}
+
+.centered {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  color: #fff;
+  border: 5px solid #4a4a4a;
+  background-color: #000;
+}
+
+.mark {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+
+  &.red {
+    background-color: $red;
+  }
+
+  &.green {
+    background-color: $green;
+  }
+}
+
+.lateral {
+  animation-name: lateralSigns;
+  animation-duration: 2s;
+  @include animate;
+
+  &:not(.red) {
+    box-shadow: 0 0 35px 20px $green;
+  }
+
+  &:not(.green) {
+    box-shadow: 0 0 35px 20px $red;
+  }
+}
+
+.special {
+  animation-name: special;
+  animation-duration: 6s;
+  @include animate;
+  box-shadow: 0 0 35px 20px $yellow;
+  background-color: $yellow;
+}
+
+.emergencyWreckMarking {
+  animation-name: emergencyWreckMarking;
+  animation-duration: 3.5s;
+  @include animate;
+  box-shadow: 0 0 35px 20px $blue;
+}
+
+.saveWater {
+  animation-name: saveWater;
+  animation-duration: 4s;
+  @include whiteAnimate;
+}
+
+.isolatedDanger {
+  animation-name: isolatedDanger;
+  animation-duration: 4s;
+  @include whiteAnimate;
+}
+
+.northCardinal {
+  animation-name: northCardinal;
+  animation-duration: 1.5s;
+  @include whiteAnimate;
+}
+
+.eastCardinal {
+  animation-name: eastCardinal;
+  animation-duration: 5s;
+  @include whiteAnimate;
+}
+
+.southCardinal {
+  animation-name: southCardinal;
+  animation-duration: 10s;
+  @include whiteAnimate;
+}
+
+.westCardinal {
+  animation-name: westCardinal;
+  animation-duration: 15s;
+  @include whiteAnimate;
+}
