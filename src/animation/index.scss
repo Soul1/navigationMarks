@@ -378,144 +378,147 @@ $blue: #00f;
   0% {
     @include start;
   }
-  3% {
+  2.5% {
     @include middle;
   }
-  6% {
+  5% {
     @include finish;
   }
-  6.01% {
+  5.01% {
     @include start;
   }
   //2
-  9% {
+  7.5% {
     @include beginOrEnd;
   }
-  12% {
+  10% {
     @include start;
   }
-  15% {
+  12.5% {
     @include middle;
   }
-  18% {
+  15% {
     @include finish;
   }
-  18.01% {
+  15.01% {
     @include start;
   }
   //3
-  21% {
+  17.5% {
     @include beginOrEnd;
   }
-  24% {
+  20% {
     @include start;
   }
-  27% {
+  22.5% {
     @include middle;
   }
-  30% {
+  25% {
     @include finish;
   }
-  30.01% {
+  25.01% {
     @include start;
   }
-  33% {
+  27.5% {
     @include beginOrEnd;
   }
   //4
-  36% {
+  30% {
     @include start;
   }
-  39% {
+  32.5% {
     @include middle;
   }
-  42% {
+  35% {
     @include finish;
   }
-  42.51% {
+  35.01% {
     @include start;
   }
-  45% {
+  37.5% {
     @include beginOrEnd;
   }
   //5
-  48% {
+  40% {
     @include start;
   }
-  51% {
+  42.5% {
     @include middle;
   }
-  54% {
+  45% {
     @include finish;
   }
-  54.01% {
+  45.01% {
     @include start;
   }
-  57% {
+  47.5% {
     @include beginOrEnd;
   }
   //6
-  60% {
+  50% {
     @include start;
   }
-  63% {
+  52.5% {
     @include middle;
   }
-  66% {
+  55% {
     @include finish;
   }
-  66.51% {
+  55.01% {
     @include start;
   }
-  69% {
+  57.5% {
     @include beginOrEnd;
   }
   //7
-  72% {
+  60% {
     @include start;
   }
-  75% {
+  62.5% {
     @include middle;
   }
-  78% {
+  65% {
     @include finish;
   }
-  78.01% {
+  65.01% {
     @include start;
   }
-  81% {
+  67.5% {
     @include beginOrEnd;
   }
   //8
-  84% {
+  70% {
     @include start;
   }
-  87% {
+  72.5% {
     @include middle;
   }
-  90% {
+  75% {
     @include finish;
   }
-  90.01% {
+  75.01% {
     @include start;
   }
-  93% {
+  77.5% {
     @include beginOrEnd;
   }
   //9
-  96% {
+  80% {
     @include start;
   }
-  99% {
+  82.5% {
     @include middle;
   }
-  7.5% {
+  85% {
     @include finish;
   }
-  7.51% {
+  85.01% {
     @include start;
   }
-  11.251% {
+  87.5% {
+    @include beginOrEnd;
+  }
+  100% {
     @include beginOrEnd;
   }
 }
